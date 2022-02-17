@@ -11,3 +11,5 @@ Color kDarkPurpleColor = Color(0xff7583CA);
 Color kFormColor = Color(0xffF2F3F7);
 Color kSandyBeachColor = Color(0xffFFECCC);
 Color kPurpleBackgroundColor = Color(0xff8E97FD);
+Color kGreyButtonColor = Color(0xffA0A3B1);
+Color kNavyBackgroundColor = Color(0xff03174C);
