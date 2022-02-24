@@ -36,6 +36,9 @@ class SignUpPage extends StatelessWidget {
                 ),
               ],
             ),
+            Text(
+              'We are what we do',
+            ),
           ],
         ),
       ),
