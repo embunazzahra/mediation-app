@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
 
 //Colors
 Color kDarkGreyColor = Color(0xff3F414E);
@@ -15,5 +14,17 @@ Color kPurpleBackgroundColor = Color(0xff8E97FD);
 Color kGreyButtonColor = Color(0xffA0A3B1);
 Color kNavyBackgroundColor = Color(0xff03174C);
 
-//font style
-// TextStyle kDarkGreyFont = GoogleFonts.poppins(color: kDarkGreyColor);
+//Font style
+TextStyle helveticaBlack =
+    TextStyle(fontFamily: 'HelveticaNeue', color: kDarkGreyColor);
+TextStyle helveticaLightGrey =
+    TextStyle(fontFamily: 'HelveticaNeue', color: kLightGreyColor);
+
+//For Font Weight
+FontWeight light = FontWeight.w300;
+FontWeight normal = FontWeight.w400;
+FontWeight medium = FontWeight.w500;
+FontWeight semiBold = FontWeight.w600;
+FontWeight bold = FontWeight.w700;
+FontWeight extraBold = FontWeight.w800;
+FontWeight black = FontWeight.w900;

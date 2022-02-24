@@ -38,6 +38,16 @@ class SignUpPage extends StatelessWidget {
             ),
             Text(
               'We are what we do',
+              style: helveticaBlack.copyWith(fontSize: 30, fontWeight: bold),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              'Thousand of people are using silent moon\nfor smalls meditation',
+              style: helveticaLightGrey.copyWith(
+                  fontSize: 16, fontWeight: light, height: 1.65),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
