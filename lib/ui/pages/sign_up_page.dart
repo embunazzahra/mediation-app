@@ -70,6 +70,28 @@ class SignUpPage extends StatelessWidget {
           ));
     }
 
+    Widget logInText() {
+      return GestureDetector(
+          onTap: () {},
+          child: Container(
+            margin: EdgeInsets.only(top: 20, bottom: 95),
+            child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                        text: 'ALREADY HAVE AN ACCOUNT? ',
+                        style: helveticaBoldGrey.copyWith(
+                            fontWeight: light, fontSize: 12)),
+                    TextSpan(
+                        text: 'LOG IN',
+                        style: helveticaPurple.copyWith(
+                            fontWeight: light, fontSize: 12)),
+                  ],
+                )),
+          ));
+    }
+
     return Scaffold(
       backgroundColor: kWhiteBackgroundColor,
       body: Center(
@@ -78,6 +100,7 @@ class SignUpPage extends StatelessWidget {
             background(),
             signUpText(),
             signUpButton(),
+            logInText(),
           ],
         ),
       ),

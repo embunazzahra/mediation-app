@@ -19,8 +19,13 @@ TextStyle helveticaBlack =
     TextStyle(fontFamily: 'HelveticaNeueBold', color: kDarkGreyColor);
 TextStyle helveticaLightGrey =
     TextStyle(fontFamily: 'HelveticaNeueLight', color: kLightGreyColor);
+TextStyle helveticaBoldGrey =
+    TextStyle(fontFamily: 'HelveticaNeueBold', color: kLightGreyColor);
+
 TextStyle helveticaWhite =
     TextStyle(fontFamily: 'HelveticaNeueBold', color: kWhiteButtonColor);
+TextStyle helveticaPurple =
+    TextStyle(fontFamily: 'HelveticaNeueBold', color: kLightPurpleColor);
 
 //For Font Weight
 FontWeight light = FontWeight.w300;
