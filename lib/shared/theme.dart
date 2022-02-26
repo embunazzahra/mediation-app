@@ -16,9 +16,11 @@ Color kNavyBackgroundColor = Color(0xff03174C);
 
 //Font style
 TextStyle helveticaBlack =
-    TextStyle(fontFamily: 'HelveticaNeue', color: kDarkGreyColor);
+    TextStyle(fontFamily: 'HelveticaNeueBold', color: kDarkGreyColor);
 TextStyle helveticaLightGrey =
-    TextStyle(fontFamily: 'HelveticaNeue', color: kLightGreyColor);
+    TextStyle(fontFamily: 'HelveticaNeueLight', color: kLightGreyColor);
+TextStyle helveticaWhite =
+    TextStyle(fontFamily: 'HelveticaNeueBold', color: kWhiteButtonColor);
 
 //For Font Weight
 FontWeight light = FontWeight.w300;
@@ -28,3 +30,9 @@ FontWeight semiBold = FontWeight.w600;
 FontWeight bold = FontWeight.w700;
 FontWeight extraBold = FontWeight.w800;
 FontWeight black = FontWeight.w900;
+
+//Border radius
+double defaultRadius = 38;
+
+//Default margin
+double defaultMargin = 20;
