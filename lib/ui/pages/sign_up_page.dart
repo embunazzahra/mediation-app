@@ -66,7 +66,10 @@ class SignUpPage extends StatelessWidget {
               style: helveticaWhite.copyWith(
                   fontWeight: medium, letterSpacing: 0.7),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamedAndRemoveUntil(
+                  context, '/reminders-page', (route) => false);
+            },
           ));
     }
 
