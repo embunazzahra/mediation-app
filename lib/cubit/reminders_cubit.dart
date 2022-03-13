@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
 
 class RemindersCubit extends Cubit<List<String>> {
@@ -11,6 +12,7 @@ class RemindersCubit extends Cubit<List<String>> {
       state.add(day);
     }
     emit(List.from(state));
+    print(List.from(state));
   }
 
   bool isSelected(String day) {
