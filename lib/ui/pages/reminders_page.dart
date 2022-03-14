@@ -9,23 +9,30 @@ class RemindersPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(
-      child:
-          //day to meditate
-          BlocBuilder<RemindersCubit, List<String>>(builder: (context, state) {
-        return Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            DayWidget(day: 'SU'),
-            DayWidget(day: 'M'),
-            DayWidget(day: 'T'),
-            DayWidget(day: 'W'),
-            DayWidget(day: 'TH'),
-            DayWidget(day: 'F'),
-            DayWidget(day: 'S'),
-          ],
-        );
-      }),
-    ));
+    return Scaffold(
+        body: Center(
+            child: Column(
+      children: [
+        Text(
+          'Every day is best, but we recommend picking at least five.',
+          style: helveticaBoldGrey.copyWith(fontSize: 16),
+        ),
+        //day to meditate
+        BlocBuilder<RemindersCubit, List<String>>(builder: (context, state) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              DayWidget(day: 'SU'),
+              DayWidget(day: 'M'),
+              DayWidget(day: 'T'),
+              DayWidget(day: 'W'),
+              DayWidget(day: 'TH'),
+              DayWidget(day: 'F'),
+              DayWidget(day: 'S'),
+            ],
+          );
+        }),
+      ],
+    )));
   }
 }
