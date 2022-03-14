@@ -12,10 +12,26 @@ class RemindersPage extends StatelessWidget {
     return Scaffold(
         body: Center(
             child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Every day is best, but we recommend picking at least five.',
-          style: helveticaBoldGrey.copyWith(fontSize: 16),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+          child: Text.rich(TextSpan(children: [
+            TextSpan(
+              text: 'Which day would you\nlike to meditate?\n\n',
+              style: helveticaBlack.copyWith(
+                  fontSize: 24, fontWeight: bold, height: 1.5),
+            ),
+            TextSpan(
+              text:
+                  'Every day is best, but we recommend picking\nat least five.',
+              style: helveticaLightGrey.copyWith(
+                  fontSize: 16,
+                  fontWeight: bold,
+                  letterSpacing: 0.7,
+                  height: 1.5),
+            ),
+          ])),
         ),
         //day to meditate
         BlocBuilder<RemindersCubit, List<String>>(builder: (context, state) {
